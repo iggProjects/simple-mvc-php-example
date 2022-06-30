@@ -20,16 +20,6 @@
                     <li><span>PVP:</span> <?= $product->getProductPvp();  ?></li>
                 </ul>
             <?  endforeach; ?>
-
-            <?php foreach( $products as $product ) : ?>
-                <ul class="product-info">
-                    <li><span>Code:</span> <?= $product->getProductCode();  ?></li>
-                    <li><span>Name:</span> <?= $product->getProductName();  ?></li>
-                    <li><span>Short name:</span> <?= $product->getProductShortName();  ?></li>
-                    <li><span>PVP:</span> <?= $product->getProductPvp();  ?></li>
-                </ul>
-            <?  endforeach; ?>
-
             
         </section>
     </main>
