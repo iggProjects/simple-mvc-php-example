@@ -9,17 +9,21 @@
 <body>
     <main class="wrapper">
         <section class="products-container">
+
             <header>
                 <h1>List of products</h1>
             </header>
-            <?php foreach( $products as $product ) : ?>
-                <ul class="product-info">
-                    <li><span>Code:</span> <?= $product->getProductCode();  ?></li>
-                    <li><span>Name:</span> <?= $product->getProductName();  ?></li>
-                    <li><span>Short name:</span> <?= $product->getProductShortName();  ?></li>
-                    <li><span>PVP:</span> <?= $product->getProductPvp();  ?></li>
-                </ul>
-            <?  endforeach; ?>
+
+            <?php foreach ( $products as $product ) {
+                echo "<ul class='product-info'>
+                    <li><span>Code:</span>" . $product->getProductCode() . "</li>
+                    <li><span>Name:</span>" . $product->getProductName() . "</li>
+                    <li><span>Short name:</span>" . $product->getProductShortName() . "</li>
+                    <li><span>PVP:</span>" . $product->getProductPvp() . "</li>
+                </ul>";
+            }
+            ?>
+
         </section>
     </main>
 </body>
